@@ -1,0 +1,106 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: "woodmart-font";
+	src: url("//tigon.vn/wp-content/themes/woodmart/fonts/woodmart-font-1-400.woff2?v=8.2.7") format("woff2");
+}
+
+:root {
+	--wd-text-font: "Fahkwang", Arial, Helvetica, sans-serif;
+	--wd-text-font-weight: 400;
+	--wd-text-color: rgb(50,50,50);
+	--wd-text-font-size: 16px;
+	--wd-title-font: "Phudu", Arial, Helvetica, sans-serif;
+	--wd-title-font-weight: 700;
+	--wd-title-color: rgb(25,25,25);
+	--wd-entities-title-font: "Phudu", Arial, Helvetica, sans-serif;
+	--wd-entities-title-font-weight: 600;
+	--wd-entities-title-color: rgb(25,25,25);
+	--wd-entities-title-color-hover: rgb(51 51 51 / 65%);
+	--wd-alternative-font: "Phudu", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font: "Phudu", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font-weight: 600;
+	--wd-widget-title-transform: capitalize;
+	--wd-widget-title-color: rgb(25,25,25);
+	--wd-widget-title-font-size: 16px;
+	--wd-header-el-font: "Phudu", Arial, Helvetica, sans-serif;
+	--wd-header-el-font-weight: 600;
+	--wd-header-el-transform: capitalize;
+	--wd-header-el-font-size: 16px;
+	--wd-primary-color: rgb(202,153,115);
+	--wd-alternative-color: rgb(25,25,25);
+	--wd-link-color: rgb(202,153,115);
+	--wd-link-color-hover: rgb(25,25,25);
+	--btn-default-bgcolor: #f7f7f7;
+	--btn-default-bgcolor-hover: #efefef;
+	--btn-accented-bgcolor: rgb(220,172,127);
+	--btn-accented-bgcolor-hover: rgb(200,157,116);
+	--btn-transform: capitalize;
+	--wd-form-brd-width: 2px;
+	--notices-success-bg: #459647;
+	--notices-success-color: #fff;
+	--notices-warning-bg: #E0B252;
+	--notices-warning-color: #fff;
+}
+.wd-popup.wd-age-verify {
+	--wd-popup-width: 500px;
+}
+.wd-popup.wd-promo-popup {
+	background-color: rgb(245,245,245);
+	background-image: url(https://tigon.vn/wp-content/uploads/2023/03/p-bg-3.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+	--wd-popup-width: 800px;
+}
+:is(.woodmart-woocommerce-layered-nav, .wd-product-category-filter) .wd-scroll-content {
+	max-height: 223px;
+}
+.wd-page-title {
+	background-color: #0a0a0a;
+	background-image: none;
+	background-size: cover;
+	background-position: center center;
+}
+.wd-footer {
+	background-color: rgb(233,235,239);
+	background-image: none;
+}
+html .wd-nav-mobile > li > a {
+	text-transform: capitalize;
+}
+.page .wd-page-content {
+	background-color: rgb(245,245,245);
+	background-image: none;
+}
+.wd-popup.popup-quick-view {
+	--wd-popup-width: 920px;
+}
+:root{
+--wd-container-w: 1222px;
+--wd-form-brd-radius: 0px;
+--btn-default-color: #333;
+--btn-default-color-hover: #333;
+--btn-accented-color: #fff;
+--btn-accented-color-hover: #fff;
+--btn-default-brd-radius: 0px;
+--btn-default-box-shadow: none;
+--btn-default-box-shadow-hover: none;
+--btn-default-box-shadow-active: none;
+--btn-default-bottom: 0px;
+--btn-accented-brd-radius: 0px;
+--btn-accented-box-shadow: none;
+--btn-accented-box-shadow-hover: none;
+--btn-accented-box-shadow-active: none;
+--btn-accented-bottom: 0px;
+--wd-brd-radius: 0px;
+}
+
+@media (min-width: 1222px) {
+section.elementor-section.wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+

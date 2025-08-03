@@ -1,3 +1,4 @@
 [03-Aug-2025 02:45:42 UTC] PHP Warning:  include(/home/fqxdfix/public_html/wp-content/languages/plugins/woocommerce-vi.l10n.php): Failed to open stream: No such file or directory in /home/fqxdfix/public_html/wp-includes/l10n.php on line 1608
 [03-Aug-2025 02:45:42 UTC] PHP Warning:  include(): Failed opening '/home/fqxdfix/public_html/wp-content/languages/plugins/woocommerce-vi.l10n.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/fqxdfix/public_html/wp-includes/l10n.php on line 1608
 [03-Aug-2025 03:17:54 UTC] PHP Warning:  Undefined array key "price_id" in /home/fqxdfix/public_html/wp-content/plugins/premium-addons-pro/admin/includes/admin-helper.php on line 316
+[03-Aug-2025 14:23:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected

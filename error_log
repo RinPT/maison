@@ -5,3 +5,9 @@
 [03-Aug-2025 02:38:51 UTC] PHP Warning:  imagejpeg(/home/fqxdfix/public_html/wp-content/uploads/2021/08/post-3-gallery-2-min-287x383.jpg): Failed to open stream: Permission denied in /home/fqxdfix/public_html/wp-includes/class-wp-image-editor.php on line 585
 [03-Aug-2025 02:38:51 UTC] PHP Warning:  Trying to access array offset on false in /home/fqxdfix/public_html/wp-includes/media.php on line 800
 [03-Aug-2025 02:38:51 UTC] PHP Warning:  Trying to access array offset on false in /home/fqxdfix/public_html/wp-includes/media.php on line 806
+[03-Aug-2025 08:36:05 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[03-Aug-2025 08:51:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_optimized_size_keys` successfully executed.
+[03-Aug-2025 08:51:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_mime_type` successfully executed.
+[03-Aug-2025 08:51:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_avif_with_zero_dimensions` successfully executed.
+[03-Aug-2025 09:33:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[03-Aug-2025 14:24:20 UTC] Lỗi lịch sự kiện Cron cho hook: action_scheduler_run_queue, Mã lỗi: invalid_schedule, Thông báo lỗi: Lịch cho sự kiện không tồn tại., Dữ liệu: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
