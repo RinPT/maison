@@ -1,0 +1,4 @@
+[17-Aug-2025 19:28:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/fqxdfix/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fqxdfix/public_html/wp-admin/includes/admin.php on line 16

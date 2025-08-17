@@ -1,0 +1,4 @@
+[05-Aug-2025 21:33:52 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "ParagonIE_Sodium_Core_AES_KeySchedule" not found in /home/fqxdfix/public_html/wp-includes/sodium_compat/src/Core/AES/Expanded.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fqxdfix/public_html/wp-includes/sodium_compat/src/Core/AES/Expanded.php on line 10

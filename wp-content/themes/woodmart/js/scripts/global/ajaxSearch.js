@@ -79,9 +79,9 @@
 								overlayBackground('close');
 							}
 
-							if (isClearBtn || isFullScreen2 || isFullScreen) {
+							if (isClearBtn || isFullScreen2 || isFullScreen || isBeforeSearchContent) {
 								$formWrapper.removeClass('wd-searched');
-							} else if ( ! isBeforeSearchContent ) {
+							} else {
 								$formWrapper.find('.wd-search-results').removeClass('wd-opened');
 
 								setTimeout(function() {
@@ -160,7 +160,7 @@
 								var ariaLabel = '';
 
 								if (suggestion.value) {
-									ariaLabel = `aria-label="${suggestion.value}"`;
+									ariaLabel = `aria-label="${suggestion.value.replace(/(<([^>]+)>)/ig, '')}"`;
 								}
 
 								returnValue += ` <a class="wd-fill" href="${suggestion.permalink}" ${ariaLabel}></a>`;

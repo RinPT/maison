@@ -1,0 +1,4 @@
+[12-Aug-2025 23:00:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "WP_Customize_Control" not found in /home/fqxdfix/public_html/wp-includes/customize/class-wp-customize-date-time-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fqxdfix/public_html/wp-includes/customize/class-wp-customize-date-time-control.php on line 17
