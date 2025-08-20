@@ -13,7 +13,7 @@ if( ! function_exists( 'woodmart_shortcode_social' )) {
 		$links_atts = array(
 			'fb_link'         => '',
 			'twitter_link'    => '',
-			'bluesky_link'    => '',
+			'zalo_link'    => '',
 			'isntagram_link'  => '',
 			'threads_link'    => '',
 			'pinterest_link'  => '',
@@ -158,11 +158,11 @@ if( ! function_exists( 'woodmart_shortcode_social' )) {
 					</a>
 				<?php endif ?>
 
-				<?php if ( 'follow' === $type && '' !== $bluesky_link ) : ?>
-					<a rel="noopener noreferrer nofollow" href="<?php echo esc_url( $bluesky_link ); ?>" target="<?php echo esc_attr( $target ); ?>" class="<?php echo 'yes' === $tooltip ? 'wd-tooltip' : ''; ?> wd-social-icon social-bluesky" aria-label="<?php esc_attr_e( 'Bluesky social link', 'woodmart' ); ?>">
+				<?php if ( 'follow' === $type && '' !== $zalo_link ) : ?>
+					<a rel="noopener noreferrer nofollow" href="<?php echo esc_url( $zalo_link ); ?>" target="<?php echo esc_attr( $target ); ?>" class="<?php echo 'yes' === $tooltip ? 'wd-tooltip' : ''; ?> wd-social-icon social-bluesky" aria-label="<?php esc_attr_e( 'Bluesky social link', 'woodmart' ); ?>">
 						<span class="wd-icon"></span>
 						<?php if ( $sticky ) : ?>
-							<span class="wd-icon-name"><?php esc_html_e( 'Bluesky', 'woodmart' ); ?></span>
+							<span class="wd-icon-name"><?php esc_html_e( 'Zalo', 'woodmart' ); ?></span>
 						<?php endif; ?>
 					</a>
 				<?php endif ?>

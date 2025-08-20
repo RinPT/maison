@@ -115,8 +115,8 @@ Options::add_field(
 
 Options::add_field(
 	array(
-		'id'       => 'bluesky_link',
-		'name'     => esc_html__( 'Bluesky link', 'woodmart' ),
+		'id'       => 'zalo_link',
+		'name'     => esc_html__( 'Zalo link', 'woodmart' ),
 		'type'     => 'text_input',
 		'section'  => 'social_links',
 		'default'  => '',

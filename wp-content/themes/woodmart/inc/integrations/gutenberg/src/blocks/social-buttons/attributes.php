@@ -49,7 +49,7 @@ if ( ! function_exists( 'wd_get_block_social_buttons_attrs' ) ) {
 					'type'    => 'string',
 					'default' => '#',
 				),
-				'bluesky_link'        => array(
+				'zalo_link'        => array(
 					'type'    => 'string',
 					'default' => '',
 				),

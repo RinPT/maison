@@ -183,9 +183,9 @@ class Social extends Widget_Base {
 		);
 
 		$this->add_control(
-			'bluesky_link',
+			'zalo_link',
 			array(
-				'label'   => esc_html__( 'Bluesky link', 'woodmart' ),
+				'label'   => esc_html__( 'Zalo link', 'woodmart' ),
 				'type'    => Controls_Manager::TEXT,
 				'default' => '',
 				'ai'      => array(

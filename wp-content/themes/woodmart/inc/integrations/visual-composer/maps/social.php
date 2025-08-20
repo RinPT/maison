@@ -139,8 +139,8 @@ if( ! function_exists( 'woodmart_get_social_shortcode_params' ) ) {
 			),
 			array(
 				'type'             => 'textfield',
-				'heading'          => esc_html__( 'Bluesky link', 'woodmart' ),
-				'param_name'       => 'bluesky_link',
+				'heading'          => esc_html__( 'Zalo link', 'woodmart' ),
+				'param_name'       => 'zalo_link',
 				'std'              => '',
 				'save_always'      => true,
 				'dependency'       => array(
