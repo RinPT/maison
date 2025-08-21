@@ -19,3 +19,8 @@
 [13-Aug-2025 11:33:03 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
 [16-Aug-2025 18:42:54 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
 [17-Aug-2025 03:41:53 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[21-Aug-2025 08:11:21 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[21-Aug-2025 20:07:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/fqxdfix/public_html/wp-settings.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/fqxdfix/public_html/wp-settings.php on line 34
