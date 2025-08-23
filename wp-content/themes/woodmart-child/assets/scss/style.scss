@@ -262,7 +262,7 @@ header {
     .menu {
         .menu-booking {
             > .wd-dropdown {
-                margin-top: 22px;
+                margin-top: 12px;
             }
         }
     }
@@ -339,3 +339,297 @@ header {
         }
     }
 }
+.wd-page-content.main-page-wrapper {
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.5);
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &.menu-dropdown-open {
+        &:before {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.1s linear;
+        }
+    }
+}
+.booking-form {
+    form {
+        input, select, textarea {
+            border-radius: 0 !important;
+            &:focus {
+                border-color: var(--wd-primary-color) !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+    .wpforms-submit-container {
+        text-align: right;
+        .wpforms-submit {
+            font-size: 18px;
+            padding-left: 20px;
+            &:after {
+                content: "\f120";
+                font-family: "woodmart-font";
+                font-weight: 400;
+                font-size: 22px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+header {
+    .booking-form {
+        .wpforms-submit-container {
+            .wpforms-submit {
+                background-color: transparent !important;
+                color: var(--wd-primary-color) !important;
+                font-family: var(--wd-title-font);
+                font-weight: 600;
+                border: solid 2px var(--wd-primary-color) !important;
+                border-radius: 0;
+                &:hover {
+                    background: var(--wd-primary-color) !important;
+                    border-color: transparent !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+.wd-nav-pagin-item {
+    &.wd-active {
+        color: var(--wd-primary-color);
+        span {
+            color: inherit !important;
+        }
+    }
+}
+.main-banner {
+    .wd-slide {
+        aspect-ratio: 1920 / 880 !important;
+        max-height: 1100px;
+        min-height: 600px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.5);
+            z-index: 1;
+        }
+        &-inner {
+            max-width: 50% !important;
+            color: #fff;
+            h1, h2, h3 {
+                font-size: 55px;
+                color: inherit;
+                line-height: 1.2;
+            }
+            p {
+                font-size: 25px;
+                line-height: 1.3;
+            }
+            p:last-child {
+                margin: 30px 0 0 0;
+                > a {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: var(--wd-title-font);
+                    font-weight: bold;
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border: 2px solid rgba(255, 255, 255, 0.3);
+                    padding: 0 20px;
+                    height: 45px;
+                    line-height: 40px;
+                    &:hover {
+                        background: var(--wd-primary-color);
+                        border-color: var(--wd-primary-color);
+                    }
+                    &:after {
+                        content: "\f120";
+                        font-family: "woodmart-font";
+                        font-weight: 400;
+                        font-size: 24px;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        margin: 0 0 -1px 10px;
+                    }
+                }
+            }
+        }
+        [class*="wd-animation"] {
+            --wd-anim-duration: 1.5s !important;
+            transition-delay: 0.35s;
+        }
+    }
+    .wd-nav-pagin-wrap {
+        margin: 0;
+        bottom: 50px;
+        .wd-nav-pagin {
+            gap: 15px;
+            li {
+                width: 20px;
+                height: 20px;
+                border: solid 2px #fff;
+                border-radius: 50%;
+                &:before, &:after, span {
+                    display: none;
+                }
+                &.wd-active {
+                    background-color: var(--wd-primary-color);
+                }
+            }
+        }
+    }
+    .nav-pagin-duplicate {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 50%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-right: -600px;
+        &:before {
+            content: "";
+            width: 5px;
+            height: 50px;
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+        li {
+            font-size: 14px;
+            color: #fff;
+            text-align: right;
+            font-family: var(--wd-title-font);
+            font-weight: 600;
+            line-height: 1;
+            margin: 5px 0;
+            span {
+                color: inherit;
+                font-size: inherit;
+                display: block;
+            }
+            &.wd-active {
+                font-size: 32px;
+                color: var(--wd-primary-color);
+            }
+        }
+    }
+}
+.home-about {
+    &-text {
+        .title-subtitle {
+            margin-bottom: 0;
+        }
+        .liner-continer {
+            margin-bottom: 20px;
+        }
+    }
+}
+.btn-outline {
+    .btn {
+        color: var(--wd-primary-color);
+        border: solid 2px var(--wd-primary-color);
+        font-family: var(--wd-title-font);
+        font-size: 18px;
+        height: 45px;
+        line-height: 40px;
+        &:after {
+            content: "\f120";
+            font-family: "woodmart-font";
+            font-weight: 400;
+            font-size: 24px;
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0 0 -1px 10px;
+            color: inherit;
+        }
+        &:hover {
+            background-color: var(--wd-primary-color);
+            color: #fff;
+        }
+    }
+}
+.home-infobox {
+    &-info {
+        .info-box-wrapper {
+            .info-box-icon {
+                width: 70px;
+                .info-svg-wrapper {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+}
+.home-infoxbox-slider {
+    .swiper {
+        padding: 0 !important;
+        .swiper-slide {
+            .swiper-slide-inner {
+                padding-bottom: calc(680/620 * 100%);
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: 0 !important;
+        }
+    }
+}
+.slider-pagi {
+    .swiper-pagination {
+        padding-bottom: 30px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        .swiper-pagination-bullet {
+            margin: 0 !important;
+            width: 17px;
+            height: 17px;
+            background-color: transparent;
+            border: solid 2px #fff;
+            opacity: 1;
+            &-active {
+                border-color: var(--wd-primary-color);
+                background-color: var(--wd-primary-color);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
