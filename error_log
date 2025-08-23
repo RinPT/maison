@@ -24,3 +24,6 @@
 Stack trace:
 #0 {main}
   thrown in /home/fqxdfix/public_html/wp-settings.php on line 34
+[22-Aug-2025 13:12:10 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[23-Aug-2025 11:29:49 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[23-Aug-2025 17:32:19 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
