@@ -27,3 +27,85 @@ Stack trace:
 [22-Aug-2025 13:12:10 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
 [23-Aug-2025 11:29:49 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
 [23-Aug-2025 17:32:19 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[24-Aug-2025 04:01:08 UTC] PHP Warning:  unlink(/home/fqxdfix/public_html/wp-content/plugins/wp-scss/cache/style.css): No such file or directory in /home/fqxdfix/public_html/wp-content/plugins/wp-scss/class/class-wp-scss.php on line 123
+[25-Aug-2025 14:45:49 UTC] PHP Fatal error:  Uncaught Error: Cannot access private property MenuListAssets::$assets_loaded in /home/fqxdfix/public_html/wp-content/themes/woodmart-child/function-cus/menu-list.php:155
+Stack trace:
+#0 /home/fqxdfix/public_html/wp-includes/shortcodes.php(434): {closure}()
+#1 [internal function]: do_shortcode_tag()
+#2 /home/fqxdfix/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#3 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/widgets/shortcode.php(141): do_shortcode()
+#4 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2374): Elementor\Widget_Shortcode->render()
+#5 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(636): Elementor\Controls_Stack->render_by_mode()
+#6 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(774): Elementor\Widget_Base->render_content()
+#7 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/element-base.php(492): Elementor\Widget_Base->print_content()
+#8 /home/fqxdfix/public_html/wp-content/plugins/elementor/modules/element-cache/module.php(91): Elementor\Element_Base->print_element()
+#9 /home/fqxdfix/public_html/wp-includes/shortcodes.php(434): Elementor\Modules\ElementCache\Module->Elementor\Modules\ElementCache\{closure}()
+#10 [internal function]: do_shortcode_tag()
+#11 /home/fqxdfix/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#12 /home/fqxdfix/public_html/wp-content/plugins/elementor/core/base/document.php(1877): do_shortcode()
+#13 /home/fqxdfix/public_html/wp-content/plugins/elementor/core/base/document.php(1210): Elementor\Core\Base\Document->print_elements()
+#14 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/frontend.php(1169): Elementor\Core\Base\Document->print_elements_with_wrapper()
+#15 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/frontend.php(1064): Elementor\Frontend->get_builder_content()
+#16 /home/fqxdfix/public_html/wp-includes/class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content()
+#17 /home/fqxdfix/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /home/fqxdfix/public_html/wp-content/themes/woodmart/inc/template-tags/template-tags.php(637): apply_filters()
+#19 /home/fqxdfix/public_html/wp-content/themes/woodmart/page.php(33): woodmart_get_the_content()
+#20 /home/fqxdfix/public_html/wp-includes/template-loader.php(106): include('/home/fqxdfix/p...')
+#21 /home/fqxdfix/public_html/wp-blog-header.php(19): require_once('/home/fqxdfix/p...')
+#22 /home/fqxdfix/public_html/index.php(17): require('/home/fqxdfix/p...')
+#23 {main}
+  thrown in /home/fqxdfix/public_html/wp-content/themes/woodmart-child/function-cus/menu-list.php on line 155
+[25-Aug-2025 14:46:00 UTC] PHP Fatal error:  Uncaught Error: Cannot access private property MenuListAssets::$assets_loaded in /home/fqxdfix/public_html/wp-content/themes/woodmart-child/function-cus/menu-list.php:155
+Stack trace:
+#0 /home/fqxdfix/public_html/wp-includes/shortcodes.php(434): {closure}()
+#1 [internal function]: do_shortcode_tag()
+#2 /home/fqxdfix/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#3 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/widgets/shortcode.php(141): do_shortcode()
+#4 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2374): Elementor\Widget_Shortcode->render()
+#5 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(636): Elementor\Controls_Stack->render_by_mode()
+#6 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(774): Elementor\Widget_Base->render_content()
+#7 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/element-base.php(492): Elementor\Widget_Base->print_content()
+#8 /home/fqxdfix/public_html/wp-content/plugins/elementor/modules/element-cache/module.php(91): Elementor\Element_Base->print_element()
+#9 /home/fqxdfix/public_html/wp-includes/shortcodes.php(434): Elementor\Modules\ElementCache\Module->Elementor\Modules\ElementCache\{closure}()
+#10 [internal function]: do_shortcode_tag()
+#11 /home/fqxdfix/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#12 /home/fqxdfix/public_html/wp-content/plugins/elementor/core/base/document.php(1877): do_shortcode()
+#13 /home/fqxdfix/public_html/wp-content/plugins/elementor/core/base/document.php(1210): Elementor\Core\Base\Document->print_elements()
+#14 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/frontend.php(1169): Elementor\Core\Base\Document->print_elements_with_wrapper()
+#15 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/frontend.php(1064): Elementor\Frontend->get_builder_content()
+#16 /home/fqxdfix/public_html/wp-includes/class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content()
+#17 /home/fqxdfix/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /home/fqxdfix/public_html/wp-content/themes/woodmart/inc/template-tags/template-tags.php(637): apply_filters()
+#19 /home/fqxdfix/public_html/wp-content/themes/woodmart/page.php(33): woodmart_get_the_content()
+#20 /home/fqxdfix/public_html/wp-includes/template-loader.php(106): include('/home/fqxdfix/p...')
+#21 /home/fqxdfix/public_html/wp-blog-header.php(19): require_once('/home/fqxdfix/p...')
+#22 /home/fqxdfix/public_html/index.php(17): require('/home/fqxdfix/p...')
+#23 {main}
+  thrown in /home/fqxdfix/public_html/wp-content/themes/woodmart-child/function-cus/menu-list.php on line 155
+[25-Aug-2025 14:46:23 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property MenuListAssets::$assets_loaded in /home/fqxdfix/public_html/wp-content/themes/woodmart-child/function-cus/menu-list.php:153
+Stack trace:
+#0 /home/fqxdfix/public_html/wp-includes/shortcodes.php(434): {closure}()
+#1 [internal function]: do_shortcode_tag()
+#2 /home/fqxdfix/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#3 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/widgets/shortcode.php(141): do_shortcode()
+#4 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2374): Elementor\Widget_Shortcode->render()
+#5 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(636): Elementor\Controls_Stack->render_by_mode()
+#6 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(774): Elementor\Widget_Base->render_content()
+#7 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/base/element-base.php(492): Elementor\Widget_Base->print_content()
+#8 /home/fqxdfix/public_html/wp-content/plugins/elementor/modules/element-cache/module.php(91): Elementor\Element_Base->print_element()
+#9 /home/fqxdfix/public_html/wp-includes/shortcodes.php(434): Elementor\Modules\ElementCache\Module->Elementor\Modules\ElementCache\{closure}()
+#10 [internal function]: do_shortcode_tag()
+#11 /home/fqxdfix/public_html/wp-includes/shortcodes.php(273): preg_replace_callback()
+#12 /home/fqxdfix/public_html/wp-content/plugins/elementor/core/base/document.php(1877): do_shortcode()
+#13 /home/fqxdfix/public_html/wp-content/plugins/elementor/core/base/document.php(1210): Elementor\Core\Base\Document->print_elements()
+#14 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/frontend.php(1169): Elementor\Core\Base\Document->print_elements_with_wrapper()
+#15 /home/fqxdfix/public_html/wp-content/plugins/elementor/includes/frontend.php(1064): Elementor\Frontend->get_builder_content()
+#16 /home/fqxdfix/public_html/wp-includes/class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content()
+#17 /home/fqxdfix/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /home/fqxdfix/public_html/wp-content/themes/woodmart/inc/template-tags/template-tags.php(637): apply_filters()
+#19 /home/fqxdfix/public_html/wp-content/themes/woodmart/page.php(33): woodmart_get_the_content()
+#20 /home/fqxdfix/public_html/wp-includes/template-loader.php(106): include('/home/fqxdfix/p...')
+#21 /home/fqxdfix/public_html/wp-blog-header.php(19): require_once('/home/fqxdfix/p...')
+#22 /home/fqxdfix/public_html/index.php(17): require('/home/fqxdfix/p...')
+#23 {main}
+  thrown in /home/fqxdfix/public_html/wp-content/themes/woodmart-child/function-cus/menu-list.php on line 153
